@@ -6,7 +6,7 @@ import { IBenefit } from "@/types"
 
 export const getBenefits = (locale: Locale): IBenefit[] => {
     const t = translations[locale];
-    
+
     return [
         {
             title: t.benefits.paymentMethods.title,
@@ -28,7 +28,7 @@ export const getBenefits = (locale: Locale): IBenefit[] => {
                     icon: <FiCheckCircle size={26} />
                 }
             ],
-            imageSrc: "/benefits/payments-methods.png"
+            imageSrc: "/benefits/payments-methods.svg"
         },
         {
             title: t.benefits.jeelpay.title,
