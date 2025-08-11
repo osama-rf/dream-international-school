@@ -11,18 +11,18 @@ import { type Locale } from '@/lib/i18n';
 const Footer: React.FC<{ locale: Locale }> = ({ locale }) => {
     const t = translations[locale];
     const isRTL = locale === 'ar';
-    
+
     return (
         <footer className="bg-hero-background text-foreground py-10">
             <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
                 {/* School Info Section */}
                 <div className={`${isRTL ? 'text-right' : 'text-left'}`}>
                     <Link href={`/${locale}`} className="flex items-center gap-3 mb-4">
-                        <Image 
-                            src="/images/dis.png" 
-                            alt="Dream International School Logo" 
-                            width={40} 
-                            height={40} 
+                        <Image
+                            src="/images/dis.png"
+                            alt="Dream International School Logo"
+                            width={40}
+                            height={40}
                             className="rounded-lg"
                         />
                         <h3 className="text-xl font-semibold cursor-pointer">
@@ -32,7 +32,7 @@ const Footer: React.FC<{ locale: Locale }> = ({ locale }) => {
                     <p className="mt-3 text-foreground-accent leading-relaxed">
                         {t.footer.subheading}
                     </p>
-                    
+
                     {/* Address Information */}
                     <div className="mt-6">
                         <h4 className="text-lg font-semibold mb-3">{t.footer.address}</h4>
@@ -64,7 +64,7 @@ const Footer: React.FC<{ locale: Locale }> = ({ locale }) => {
                     {/* Social Media Links */}
                     {footerDetails.socials && (
                         <div className="mt-6">
-                            <h5 className="text-base font-medium mb-3">تابعونا</h5>
+                            <h5 className="text-base font-medium mb-3">{t.footer.followUs}</h5>
                             <div className="flex items-center gap-4 flex-wrap">
                                 {Object.keys(footerDetails.socials).map(platformName => {
                                     if (platformName && footerDetails.socials[platformName]) {
@@ -87,9 +87,9 @@ const Footer: React.FC<{ locale: Locale }> = ({ locale }) => {
                     )}
                 </div>
             </div>
-            
+
             <div className="mt-8 pt-6 border-t border-gray-700 text-center text-foreground-accent px-6">
-                <p>Copyright &copy; {new Date().getFullYear()} {t.siteName}. {t.footer.copyright}</p>
+                <p>{t.siteName}. {t.footer.copyright}</p>
             </div>
         </footer>
     );
