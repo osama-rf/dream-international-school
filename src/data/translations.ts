@@ -347,7 +347,7 @@ export const translations = {
           },
           {
             title: 'تأكيد فوري',
-            description: 'احصل على تأكيد فوري للدفع والإيصالات.',
+            description: 'احصل على تأكيد فوري للدفع والإيصالات',
           }
         ]
       },
