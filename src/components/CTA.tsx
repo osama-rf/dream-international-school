@@ -45,7 +45,10 @@ const CTA: React.FC<{ locale: Locale }> = ({ locale }) => {
                         </div>
 
                         {/* Content Section */}
-                        <div className="flex-1 flex flex-col items-center justify-center text-white text-center lg:text-right">
+                        <div className={clsx("flex-1 flex flex-col items-center justify-center text-white text-center", {
+                            "lg:text-right": isRTL,
+                            "lg:text-left": !isRTL
+                        })}>
                             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                                 {t.cta.heading}
                             </h2>

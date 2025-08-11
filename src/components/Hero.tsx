@@ -23,7 +23,8 @@ const Hero: React.FC<{ locale: Locale }> = ({ locale }) => {
 
             <div className="container mx-auto max-w-6xl text-center">
                 <h1 className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-tight sm:leading-tight md:leading-tight mx-auto px-2 ${locale === 'ar' ? 'max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl' : 'max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl'} break-words hyphens-auto`}>{t.hero.heading}</h1>
-                <p className={`mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl text-foreground mx-auto px-2 leading-relaxed ${locale === 'ar' ? 'max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl' : 'max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-3xl'} break-words hyphens-auto`}>{t.hero.subheading}</p>
+
+                <p className={`mt-8 sm:mt-10 md:mt-12 text-lg sm:text-xl md:text-2xl lg:text-3xl text-foreground mx-auto px-2 leading-relaxed ${locale === 'ar' ? 'max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-3xl' : 'max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-3xl'} break-words hyphens-auto`}>{t.hero.subheading}</p>
                 <div className="mt-6 sm:mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4 items-center justify-center w-full sm:w-fit mx-auto px-2 sm:px-0">
                     <WhatsAppButton dark locale={locale} />
                     <RegistrationButton dark locale={locale} />
