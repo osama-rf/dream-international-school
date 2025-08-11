@@ -36,7 +36,7 @@ const Header: React.FC<{ locale: Locale }> = ({ locale }) => {
                             alt={t.siteName}
                             width={40}
                             height={40}
-                            className="h-10 w-10 rounded-full"
+                            className="h-10 w-10 object-contain"
                         />
                         <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
                             {t.siteName}

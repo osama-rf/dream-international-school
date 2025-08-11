@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { translations } from '@/data/translations';
 import { type Locale } from '@/lib/i18n';
 
-const Logos: React.FC<{ locale?: Locale }> = ({ locale = 'en' }) => {
+const Logos: React.FC<{ locale: Locale }> = ({ locale }) => {
     const t = translations[locale];
 
     return (

@@ -1,18 +1,18 @@
 export const translations = {
   en: {
-    siteName: 'Finwise',
+    siteName: 'Dream International School',
     metadata: {
-      title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-      description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
+      title: 'Dream International School',
+      description: 'Dream International School is a leading educational institution providing a comprehensive and innovative learning environment.',
     },
     hero: {
-      heading: 'Smart, Secure, Simple Financial Management',
-      subheading: 'From effortless budgeting to real-time investment insights, Finwise puts you in control of your money like never before',
+      heading: 'Dream International School',
+      subheading: 'Welcome to our world-class education',
     },
     navigation: {
-      features: 'Features',
-      testimonials: 'Testimonials',
-      download: 'Download',
+      features: '',
+      testimonials: '',
+      download: 'Academic Year Registration',
       getStarted: 'Get Started',
     },
     sections: {
@@ -56,9 +56,10 @@ export const translations = {
       subheading: 'Dream International School offers a distinctive model in education with world-class facilities and curriculum.',
       addressLine1: 'Abu Bakr Al-Siddiq Road - Riyadh',
       addressLine2: 'Kingdom of Saudi Arabia',
+      followUs: 'Follow Us',
     },
     logos: {
-      trustedBy: 'شركاء النجاح',
+      trustedBy: 'Success Partners',
     },
     appStore: {
       downloadOn: 'Download on the',
@@ -241,9 +242,10 @@ export const translations = {
       subheading: 'مدارس دريم العالمية تقدم نموذجاً مميزاً في التعليم مع مرافق ومناهج على مستوى عالمي.',
       addressLine1: 'طريق أبي بكر الصديق – الرياض',
       addressLine2: 'المملكة العربية السعودية',
+      followUs: 'تابعونا',
     },
     logos: {
-      trustedBy: 'موثوق به من قبل أكثر من 2000 عميل حول العالم',
+      trustedBy: 'شركاء النجاح',
     },
     appStore: {
       downloadOn: 'حمّل من',
