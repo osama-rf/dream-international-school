@@ -74,23 +74,14 @@ const SchoolFeatures: React.FC<{ locale: Locale }> = ({ locale }) => {
                         className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
                         variants={cardVariants}
                     >
-                        <div className={clsx("flex flex-col items-center", {
-                            "text-center": !isRTL,
-                            "text-center": isRTL
-                        })}>
+                        <div className="flex flex-col items-center text-center">
                             <div className="mb-6 p-4 bg-yellow-50 rounded-2xl">
                                 {feature.icon}
                             </div>
-                            <h4 className={clsx("text-xl font-bold text-foreground mb-4", {
-                                "text-center": !isRTL,
-                                "text-center": isRTL
-                            })}>
+                            <h4 className="text-xl font-bold text-foreground mb-4 text-center">
                                 {feature.title}
                             </h4>
-                            <p className={clsx("text-foreground-accent leading-relaxed", {
-                                "text-center": !isRTL,
-                                "text-center": isRTL
-                            })}>
+                            <p className="text-foreground-accent leading-relaxed text-center">
                                 {feature.description}
                             </p>
                         </div>
