@@ -15,7 +15,7 @@ const ClasseraButton: React.FC<ClasseraButtonProps> = ({ dark = false, locale })
 
   return (
     <a href={classeraUrl} target="_blank" rel="noopener noreferrer">
-      <button className={`flex items-center justify-center w-[200px] sm:w-[220px] mt-0 px-4 sm:px-6 h-12 sm:h-14 rounded-full bg-blue-500 hover:bg-blue-600 text-white font-semibold text-sm sm:text-base transition-colors ${isRTL ? 'ml-0 sm:ml-0' : 'mr-0 sm:mr-0'}`}>
+      <button className={`flex items-center justify-center w-[280px] sm:w-[240px] mt-0 px-8 sm:px-6 h-16 sm:h-14 rounded-full bg-blue-500 hover:bg-blue-600 text-white font-semibold text-lg sm:text-base transition-colors`}>
         {t.buttons.classera}
       </button>
     </a>

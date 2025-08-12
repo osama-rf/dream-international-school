@@ -15,8 +15,8 @@ const HomePage: React.FC<{ params: { locale: Locale } }> = ({ params }) => {
   return (
     <>
       <Hero locale={params.locale} />
-      <Logos locale={params.locale} />
       <Container>
+        <Logos locale={params.locale} />
         <Benefits locale={params.locale} />
 
         <Section

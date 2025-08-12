@@ -23,11 +23,13 @@
 }
 
 html {
-  @apply scroll-smooth;
+  @apply scroll-smooth overflow-x-hidden;
+  max-width: 100vw;
 }
 
 body {
-  @apply text-lg;
+  @apply text-lg overflow-x-hidden;
+  max-width: 100vw;
   
   color: var(--foreground);
   background: var(--background);
